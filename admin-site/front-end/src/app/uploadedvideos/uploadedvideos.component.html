@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<app-sidenav></app-sidenav>
+
+<app-rightnav></app-rightnav>
+<div *ngFor="let url1 of a" class="video">
+    <video controls  allow="autoplay"  width="500px" height="500px">
+    <source src="{{url1[0]}}" type="video/mp4" >
+    </video>
+    <span class="text">Video uploaded by username/rollnumber:{{url1[1]}}</span><br><br>
+    <button class="btn-primary" (click)="verify(url1[1])"><h6>Post it (Verified)</h6></button><br><br><br><br>
+</div>

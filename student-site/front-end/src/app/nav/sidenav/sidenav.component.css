@@ -1,0 +1,28 @@
+.sidenav{
+    color: white;
+    /* height: 100%;
+  width: 200px; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20%;
+}
+.sidenavcontent{
+  cursor: pointer;
+  padding: 2%;
+  font-size: larger;
+  border-style:ridge;
+  margin: 3%;
+  border-color: rgb(101, 104, 104);
+}
+.sidenavcontent:hover{
+  background-color: white;
+  color:black;
+  border-color: white;
+}
+.logo{
+  margin-left: 60%;
+}

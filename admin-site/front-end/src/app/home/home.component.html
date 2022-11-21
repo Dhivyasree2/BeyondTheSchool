@@ -1,0 +1,10 @@
+    <app-sidenav></app-sidenav>
+
+    <app-rightnav></app-rightnav>
+    <div *ngFor="let url1 of a" class="video">
+        <video controls  allow="autoplay"  width="500px" height="500px">
+        <source src="{{url1[0]}}" type="video/mp4" >
+        </video>
+        <span class="text">Video uploaded by username/rollnumber:{{url1[1]}}</span><br><br><br><br><br>
+    </div>
+    

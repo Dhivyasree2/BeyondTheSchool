@@ -1,0 +1,13 @@
+.rightnav{
+    margin-left: 90%;
+    padding-bottom: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(61, 58, 58);
+    overflow-x: hidden;
+}
+button{
+    width: 100%;
+    margin-top: 20%;
+}

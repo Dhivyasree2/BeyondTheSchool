@@ -1,0 +1,14 @@
+<form #f="ngForm">
+    <label>Select the Skill Domain</label>
+    <select (change)="selectChangeHandler($event)" ngModel required #skillname="ngModel" [ngModelOptions]="{standalone: true}">
+        <option *ngFor="let i of a" value="{{i.skillname}}">{{i.skillname}}</option>
+    </select>
+    <br><br>
+    <label>Upload your video in selected Domain</label>
+    <br><br>
+    <input type="file" class="file-input" name="filename"
+       (change)="onFileSelected($event)" #fileUpload> <br><br>
+    <label>Type your username/rollnumber</label><br>
+    <input type="text" ngModel required #rollno="ngModel" [ngModelOptions]="{standalone: true}"><br><br>
+    <button type="submit" class="btn btn-primary" (click)="save(skillname.value,rollno.value)">Upload</button>
+</form>
